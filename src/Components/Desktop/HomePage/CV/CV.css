@@ -1,0 +1,29 @@
+.downloadContainer a{
+    font-family: var(--texto-boton);
+}
+
+@media (min-width:1024px) {
+   .downloadContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.downloadContainer a{
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+.downloadContainer a:hover{
+    background: var(--color-fondo);
+    border: solid 1px var(--color-primario);
+    color: var(--color-primario);
+} 
+}
+
+
+

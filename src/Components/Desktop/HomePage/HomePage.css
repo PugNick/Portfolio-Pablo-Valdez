@@ -1,0 +1,16 @@
+@media (min-width:1024px) {
+    .homeFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.helloContainer{
+    width: 205px;
+}
+
+.CVContainer{
+    width: 205px;
+}
+}
+

@@ -1,0 +1,35 @@
+@media (min-width:1024px) {
+    .descriptionContaioner{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 50%;
+}
+
+.description{
+    width: 50%;
+}
+}
+
+
+@media (max-width:767px) {
+    .photo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .description{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .photo{
+        display: flex;
+        justify-content: center;
+    }
+}

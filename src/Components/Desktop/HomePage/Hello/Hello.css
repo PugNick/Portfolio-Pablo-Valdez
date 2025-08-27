@@ -1,0 +1,53 @@
+.helloP,
+.myName{
+    font-family: var(--texto-titulos);
+}
+
+.applying{
+    font-family: var(--texto-defecto);
+    font-size: 17px;
+}
+
+@media (min-width:1024px) {
+.helloP{
+    margin: 0;
+    font-weight: 700;
+    color: var(--color-fondo);
+    background: rgb(105 80 60 / 70%);
+    display: inline-flex;
+    padding: 10px 20px 10px 10px;
+    border-radius: 30px;
+}
+
+
+.myName{
+    margin: 5px 0;
+}
+
+
+.applying{
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.links svg{
+    fill: var(--color-primario);
+    transition: .3s;
+}
+
+.links svg:hover{
+    fill: rgb(105 80 60 / 50%);
+}
+
+
+}
+
+

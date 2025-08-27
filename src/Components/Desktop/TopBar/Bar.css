@@ -1,0 +1,16 @@
+.MenuBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.MenuBar a{
+    font-family: var(--texto-boton);
+    text-decoration: none;
+    color: var(--color-fondo);
+    transition: .4s;
+}
+
+.MenuBar a:hover{
+    color: #fff;
+}

@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (min-width:1024px) {
+    .appContainerWidth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.AppContainer{
+    position: relative;
+    width: 1024px;
+}
+
+.topBar {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    background: var(--color-primario);
+    height: 64px;
+    border-radius: 30px;
+    margin: 0 20px;
+    align-items: center;
+    z-index: 100;
+}
+
+.content{
+    padding: 0 20px;
+}
+
+#home, 
+#about, 
+#skills, 
+#projects, 
+#contact{
+    padding-top: 85px;
+}
+}
+
+
+@media (max-width: 1023px) {
+    .AppContainer{
+        position: relative;
+        min-width: 360px;
+        width: 100%;
+    }
+
+    .sideBar{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}

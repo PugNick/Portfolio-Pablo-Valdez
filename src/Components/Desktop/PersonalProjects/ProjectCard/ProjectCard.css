@@ -1,0 +1,105 @@
+.infoCardContainer a{
+    font-family: var(--texto-boton);
+}
+
+.paddingCard p{
+    font-family: var(--texto-defecto);
+    font-size: 19px;
+}
+
+/*desk*/
+@media (min-width:1024px) {
+    .infoCardContainer a{
+        color: var(--color-primario);
+        text-decoration: none;
+        display: inline-flex;
+        background: var(--color-fondo);
+        padding: 5px 20px;
+        border-radius: 30px;
+        transition: .3s;
+    }
+
+    .infoCardContainer a:hover{
+        background: var(--color-primario);
+        color: var(--color-fondo);
+        border: solid 1px var(--color-fondo);
+    }
+
+
+    .infoCardContainer h3{
+        margin: 0;
+    }
+
+    .infoCardContainer p{
+        color: #fff;
+    }
+
+    .techIconsContainer{
+        display: flex;
+        gap: 30px;
+    }
+
+    .techIcon svg{
+        fill: var(--color-fondo);
+    }
+
+
+
+    .projectR .infoCardContainer {
+        text-align: right;
+    }
+}
+
+
+
+/*mobile & tablet*/
+@media (max-width:1023px) {
+    .projectCardContainer{
+        height: 100%;
+    }
+
+
+    .infoCardContainer{
+        background: var(--color-primario);
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .paddingCard{
+        padding: 10px;
+        height: calc(100% - 20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .infoCardContainer h3{
+        margin: 0;
+        background: var(--color-fondo);
+        padding: 5px 10px;
+        border-radius: 30px;
+        display: inline-flex;
+    }
+
+    .infoCardContainer a{
+        color: var(--color-primario);
+        text-decoration: none;
+    }
+
+    .infoCardContainer p{
+        color: #fff;
+        margin: 0;
+    }
+
+    .techIconsContainer{
+        display: flex;
+        gap: 25px;
+    }
+
+    .techIconsContainer svg{
+        fill: var(--color-fondo);
+    }
+}
+
+
+

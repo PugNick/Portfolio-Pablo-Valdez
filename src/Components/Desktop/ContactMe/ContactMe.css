@@ -1,0 +1,169 @@
+.contactFlex a,
+.emailContainer p{
+    font-family: var(--texto-boton);
+}
+
+.contactMeContainer h3{
+    color: var(--color-texto);
+    font-family: var(--texto-defecto);
+    font-size: 22px;
+}
+
+
+@media (min-width:1024px) {
+    .contactMeContainer h3{
+    text-align: center;
+}
+
+.contactFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+/*whatsApp*/
+.whatsAppContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: var(--color-primario);
+    padding: 5px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.whatsAppContainer svg{
+    fill: var(--color-fondo);
+}
+
+.whatsAppContainer p{
+    color: var(--color-fondo);
+    font-weight: 700;
+}
+
+.whatsAppContainer:hover{
+    background: var(--color-fondo);
+}
+
+
+.whatsAppContainer:hover svg{
+    fill: var(--color-primario);
+}
+
+.whatsAppContainer:hover p{
+    color: var(--color-primario);
+}
+
+
+/*email*/
+
+.emailContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-primario);
+    padding: 5px 30px;
+    border-radius: 50px;
+    
+}
+
+.emailContainer p{
+    margin: 0;
+    color: var(--color-fondo);
+    font-weight: 600;
+}
+
+.emailContainer button{
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.copy svg{
+    fill: var(--color-fondo);
+}
+
+.copied svg{
+    fill: rgb(237 232 208 / 50%);
+}
+}
+
+@media (max-width:1023px) {
+    .contactMeContainer{
+        min-width: 340px;
+        padding: 0 10px;
+    }
+
+    .contactMeContainer h3{
+        font-size: 18px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contactFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contactFlex a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: var(--color-fondo);
+        text-decoration: none;
+        font-weight: 600;
+        background: var(--color-primario);
+        padding: 0 20px;
+        border-radius: 35px;
+    }
+
+    .contactFlex a svg{
+        fill: var(--color-fondo);
+    }
+
+    .emailContainer{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-primario);
+        padding: 5px 30px;
+        border-radius: 50px;
+    }
+
+    .emailContainer p{
+        margin: 0;
+        color: var(--color-fondo);
+        font-weight: 600;
+    }
+
+    .emailContainer button{
+        display: flex;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+    .copy svg{
+        fill: var(--color-fondo);
+    }
+
+    .copied svg{
+        fill: rgb(237 232 208 / 50%);
+    }
+}
+

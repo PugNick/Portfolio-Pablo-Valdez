@@ -1,0 +1,87 @@
+.sideBarContainer{
+    padding: 10px;
+}
+
+.toggleButton{
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgb(105 80 60 / 70%);
+    backdrop-filter: blur(16px); 
+}
+
+.toggleButton svg{
+    width: 40px;
+    height: 40px;
+    fill: var(--color-fondo);
+}
+
+.slideContainer{
+    position: fixed;
+    background: rgb(105 80 60 / 70%);
+    backdrop-filter: blur(16px); 
+    width: 70%;
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .3s ease, transform .3s ease;
+    padding: 15px;
+}
+
+.slideContainer.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideContainer.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+
+.closeButton button{
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+}
+
+.closeButton button svg{
+    width: 30px;
+    height: 30px;
+    fill: var(--color-fondo);
+}
+
+
+
+
+.sideBarContent{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sideBarContent a{
+    font-family: var(--texto-boton);
+    text-decoration: none;
+    color: var(--color-fondo);
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .sideBarContainer{
+        padding: 20px;
+    }
+}
