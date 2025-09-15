@@ -1,6 +1,9 @@
 .myPhotoContainer img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 29%;
 }
 
 @media (min-width:1024px) {
@@ -16,6 +19,7 @@
     .myPhotoContainer{
         min-width: 340px;
         width: 400px;
+        aspect-ratio: 1 / 1;
         padding: 0 10px;
     }
 }
