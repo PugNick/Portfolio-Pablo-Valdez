@@ -10,7 +10,7 @@ function HelloM() {
                 <div className="nameCV">
                     <h3>Pablo Valdez</h3>
                     <p>Desarrollador Frontend</p>
-                    <a href='../../../../../prueba de CV.txt' download>Descargar CV</a>
+                    <a href='/Currículum Vitae.pdf' download>Descargar CV</a>
                 </div>
             </div>
         </div>
