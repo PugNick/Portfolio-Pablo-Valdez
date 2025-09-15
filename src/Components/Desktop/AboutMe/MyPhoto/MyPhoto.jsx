@@ -1,5 +1,5 @@
 //imagenes
-import Photo from '../../../../Images/foto-Curriculum.jpg';
+import Photo from '../../../../Images/Foto-Curriculum.jpg';
 
 //styles
 import './MyPhoto.css';
