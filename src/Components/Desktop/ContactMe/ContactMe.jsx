@@ -10,7 +10,7 @@ import './ContactMe.css';
 function ContactMe() {
 
     const [copied, setCopied] = useState(false);
-    const email = "pablovjujuy@gmail.com";
+    const email = "pablov.dev03@gmail.com";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(email)
