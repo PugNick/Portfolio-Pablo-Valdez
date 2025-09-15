@@ -4,7 +4,7 @@ import './CV.css';
 function CV() {
     return (
         <div className='downloadContainer'>
-            <a href="../../../../../public/Currículum Vitae.pdf" download> Descargar CV</a>
+            <a href="/Currículum Vitae.pdf" download> Descargar CV</a>
         </div>
     )
 }
