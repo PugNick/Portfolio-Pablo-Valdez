@@ -1,5 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 
+//Context
+import { useContext } from "react";
+import { LangContext } from "../../../context/LangContext";
+
 //components
 import ProjectCard from './ProjectCard/ProjectCard';
 import ProjectCardImg from './ProjectCardImg/ProjectCardImg';
@@ -20,6 +24,9 @@ import ShoeStore from '../../../Images/images-card/Sneakers.png';
 import './PersonalProjects.css';
 
 function PersonalProjects() {
+
+    const { t } = useContext(LangContext);
+
     const [activeCard, setActiveCard] = useState(null);
 
     // Refs individuales
@@ -49,9 +56,9 @@ function PersonalProjects() {
     return (
         <div className='personalProjectsContainer'>
             <div className='titleContainer'>
-                <p>🚀 Proyectos Personales</p>
+                <p>{t.projects.title}</p>
             </div>
-            <h2>Algunos de mis trabajos</h2>
+            <h2>{t.projects.subtitle}</h2>
             <div className="projectsCardContainer">
 
                 {/* VESTIRE */}
@@ -68,7 +75,7 @@ function PersonalProjects() {
                     >
                         <ProjectCard
                             title="Vestire"
-                            description="E-commerce de ropa con pagos de prueba"
+                            description={t.projects.vestire.description}
                             link="https://vestiree.netlify.app/"
                             techs={[<ReactIcon />, <JSIcon />, <HTMLIcon />, <CSSIcon />]}
                         />
@@ -83,7 +90,7 @@ function PersonalProjects() {
                     >
                         <ProjectCard
                             title="Space Tourism"
-                            description="Blog de turismo espacial"
+                            description={t.projects.space.description}
                             link="https://space-travel-now.netlify.app/"
                             techs={[<ReactIcon />, <JSIcon />, <HTMLIcon />, <CSSIcon />]}
                         />
@@ -110,7 +117,7 @@ function PersonalProjects() {
                     >
                         <ProjectCard
                             title="Manager Board"
-                            description="App de gestión de tareas"
+                            description={t.projects.manager.description}
                             link="https://manager-board.netlify.app/"
                             techs={[<ReactIcon />, <JSIcon />, <HTMLIcon />, <CSSIcon />]}
                         />
@@ -125,7 +132,7 @@ function PersonalProjects() {
                     >
                         <ProjectCard
                             title="Shoe Store"
-                            description="Un simple agregador de productos"
+                            description={t.projects.shoe.description}
                             link="https://shoe-e-commercee.netlify.app/"
                             techs={[<ReactIcon />, <JSIcon />, <HTMLIcon />, <CSSIcon />]}
                         />

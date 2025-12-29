@@ -1,3 +1,7 @@
+//Context
+import { useContext } from "react";
+import { LangContext } from "../../../../context/LangContext";
+
 //Components
 import Linkedin from "../../../../Icons/Linkedin"
 import GitHub from '../../../../Icons/GitHub';
@@ -6,11 +10,12 @@ import GitHub from '../../../../Icons/GitHub';
 import './Hello.css';
 
 function Hello() {
+    const { t } = useContext(LangContext);
     return (
         <div>
-            <p className="helloP">👋 ¡Hola!</p>
+            <p className="helloP">{t.hero.greeting}</p>
             <h2 className="myName">Pablo Valdez</h2>
-            <p className="applying">Desarrollador Frontend</p>
+            <p className="applying">{t.hero.role}</p>
             <div className="links">
 
                 <a href="https://www.linkedin.com/in/pablo-valdez-720439276/" target="_blank">

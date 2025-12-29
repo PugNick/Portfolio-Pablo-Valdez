@@ -1,4 +1,7 @@
 import { useState } from "react";
+//Context
+import { useContext } from "react";
+import { LangContext } from "../../../context/LangContext";
 
 //icons
 import Bars from "../../../Icons/Bars"
@@ -8,6 +11,8 @@ import Close from '../../../Icons/xMark';
 import './SideBar.css';
 
 function SideBar() {
+    const { lang, setLang } = useContext(LangContext);
+    const { t } = useContext(LangContext);
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,12 +36,20 @@ function SideBar() {
                     </button>
                 </div>
                 <div className="sideBarContent">
-                    <a onClick={closeBar} href="#homeM">Inicio</a>
-                    <a onClick={closeBar} href="#about">Sobre mí</a>
-                    <a onClick={closeBar} href="#skills">Tecnologías</a>
-                    <a onClick={closeBar} href="#projects">Proyectos</a>
-                    <a onClick={closeBar} href="#contact">Contacto</a>
+                    <a onClick={closeBar} href="#homeM">{t.menu.home}</a>
+                    <a onClick={closeBar} href="#about">{t.menu.about}</a>
+                    <a onClick={closeBar} href="#skills">{t.menu.skills}</a>
+                    <a onClick={closeBar} href="#projects">{t.menu.projects}</a>
+                    <a onClick={closeBar} href="#contact">{t.menu.contact}</a>
                 </div>
+            </div>
+            <div className="langContainerMobile">
+                <button
+                    onClick={() => setLang(lang === "es" ? "en" : "es")}
+                    className="langBtn"
+                >
+                    {lang === "es" ? "EN" : "ES"}
+                </button>
             </div>
 
         </nav>

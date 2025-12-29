@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 
+//translations
+import { texts } from './i18n/texts';
+
 //components
 
 //Desktop
@@ -18,6 +21,10 @@ import HomeM from './Components/Mobile/HomeMobile/HomeMobile';
 //styles
 import './App.css'
 
+
+
+import { LangContext } from './context/LangContext';
+
 function App() {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -30,47 +37,61 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem("lang") || "es"
+  });
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang)
+  }, [lang])
+
+
+
   return (
-    <div className="appContainerWidth">
-      <div className='AppContainer'>
-        {isMobile ? (
-          <div className="sideBar">
-            <SideBar />
-          </div>
-        ) : (
-          <div className="topBar">
-            <TopBar />
-          </div>
-        )}
-        <div className="content">
-
+    <LangContext.Provider value={{ lang, setLang, t: texts[lang] }}>
+      <div className="appContainerWidth">
+        <div className='AppContainer'>
           {isMobile ? (
-            <div id="homeM">
-              <HomeM />
+            <div className="sideBar">
+              <SideBar />
             </div>
-
           ) : (
-            <div id="home">
-              <Home />
+            <div className="topBar">
+              <TopBar />
             </div>
           )}
-          <div id="about">
-            <About />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <div id="contact">
-            <Contact />
-          </div>
+          <div className="content">
 
+            {isMobile ? (
+              <div id="homeM">
+                <HomeM />
+              </div>
+
+            ) : (
+              <div id="home">
+                <Home />
+              </div>
+            )}
+            <div id="about">
+              <About />
+            </div>
+            <div id="skills">
+              <Skills />
+            </div>
+            <div id="projects">
+              <Projects />
+            </div>
+            <div id="contact">
+              <Contact />
+            </div>
+
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </LangContext.Provider>
   )
 }
 

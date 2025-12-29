@@ -1,16 +1,41 @@
-.MenuBar{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.MenuBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
 }
 
-.MenuBar a{
-    font-family: var(--texto-boton);
-    text-decoration: none;
-    color: var(--color-fondo);
-    transition: .4s;
+.MenuBar a {
+  font-family: var(--texto-boton);
+  text-decoration: none;
+  color: var(--color-fondo);
+  transition: 0.4s;
 }
 
-.MenuBar a:hover{
-    color: #fff;
+.MenuBar a:hover {
+  color: #fff;
+}
+
+.MenuBar div {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+}
+
+.MenuBar button {
+  background: var(--color-primario);
+  font-family: var(--texto-boton);
+  color: var(--color-fondo);
+  border: solid 2px transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.MenuBar button:hover {
+  background: var(--color-fondo);
+  border: solid 2px var(--color-primario);
+  color: var(--color-primario);
 }

@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+//Context
+import { useContext } from "react";
+import { LangContext } from "../../../context/LangContext";
+
 //icons
 import WhatsApp from '../../../Icons/WhatsApp';
 import Copy from '../../../Icons/Copy';
@@ -20,16 +24,14 @@ function ContactMe() {
             });
     };
 
+    const { t } = useContext(LangContext);
 
     return (
         <div className='contactMeContainer'>
             <div className='titleContainer'>
-                <p>💬 Contactame</p>
+                <p>{t.contact.title}</p>
             </div>
-            <h3>Si tenés alguna consulta, propuesta o por cualquier motivo, estoy a disposición!
-                <br />
-                Podés contactarme por:
-            </h3>
+            <h3>{t.contact.description}</h3>
             <div className="contactFlex">
                 <a
                     href="https://api.whatsapp.com/send?phone=543884049460" target="_blank" rel="noopener noreferrer"

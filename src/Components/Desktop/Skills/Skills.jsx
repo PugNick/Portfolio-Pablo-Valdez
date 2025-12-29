@@ -1,3 +1,7 @@
+//Context
+import { useContext } from "react";
+import { LangContext } from "../../../context/LangContext";
+
 //iconos
 import ReactIcon from '../../../Icons/ReactIcon';
 import JS from '../../../Icons/JS';
@@ -8,12 +12,13 @@ import HTML from '../../../Icons/HTML';
 import './Skills.css';
 
 function Skills() {
+    const { t } = useContext(LangContext);
     return (
         <div className='skillsContainer'>
             <div className="titlleContainer">
-                <p>🧑‍💻 Skills & Tecnologías</p>
+                <p>{t.skills.title}</p>
             </div>
-            <h2>Tecnologías</h2>
+            <h2></h2>
             <div className='skillsIcons'>
                 <ReactIcon />
                 <JS />
@@ -21,7 +26,7 @@ function Skills() {
                 <HTML />
             </div>
             <div className='this'>
-                <p>Este portfolio fue desarrollado con React, Vite, CSS, y desplegado en Netlify.</p>
+                <p>{t.skills.description}</p>
             </div>
         </div>
     )
