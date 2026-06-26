@@ -9,7 +9,7 @@ function CV() {
     const { t } = useContext(LangContext);
     return (
         <div className='downloadContainer'>
-            <a href="/Currículum Vitae.pdf" download> {t.hero.CV}</a>
+            <a href="/Pablo_Valdez_Frontend_Developer.pdf" download> {t.hero.CV}</a>
         </div>
     )
 }
