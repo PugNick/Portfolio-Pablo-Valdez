@@ -15,7 +15,7 @@ function HelloM() {
                 <div className="nameCV">
                     <h3>Pablo Valdez</h3>
                     <p>{t.hero.role}</p>
-                    <a href='/Currículum Vitae.pdf' download>{t.hero.CV}</a>
+                    <a href='/Pablo_Valdez_Frontend_Developer.pdf' download>{t.hero.CV}</a>
                 </div>
             </div>
         </div>
