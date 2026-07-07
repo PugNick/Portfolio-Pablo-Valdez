@@ -14,11 +14,11 @@ export const texts = {
         },
         info: {
             title: 'Sobre mí',
-            description1: '👋Soy Pablo, desarrollador frontend autodidacta de Argentina. ¡Mucho gusto!',
-            description2: '🎓Me formé de manera autodidacta y también hice varios cursos online que me ayudaron a crecer como desarrollador.',
+            description1: '👋 Soy Pablo, desarrollador frontend autodidacta de Argentina. ¡Mucho gusto!',
+            description2: '🎓 Construí mis conocimientos a través de proyectos personales, documentación técnica y cursos online, con un enfoque en el aprendizaje continuo.',
             description3: '👨‍💻 Actualmente trabajo en proyectos personales como blogs y e-commerce, siempre buscando mejorar día a día.',
             description4: '💡 Me interesa todo lo relacionado con el diseño web, la experiencia de usuario y seguir aprendiendo nuevas herramientas.',
-            description5: '🚀 Buscando mi primera oportunidad profesional para seguir creciendo y aportar mi pasión por la tecnología.',
+            description5: '🚀 Buscando incorporarme a un equipo donde pueda seguir creciendo profesionalmente y aportar mi pasión por la tecnología.',
         },
         skills: {
             title: '🧑‍💻 Skills & Tecnologías',
@@ -63,10 +63,10 @@ Podés contactarme por:`,
         info: {
             title: 'About me',
             description1: "👋 Hi! I'm Pablo, a self-taught frontend developer from Argentina. Nice to meet you!",
-            description2: '🎓 I learned through self-study and also completed several online courses that helped me grow as a developer.',
+            description2: '🎓 I built my skills through personal projects, technical documentation, and online courses, with a strong focus on continuous learning.',
             description3: '👨‍💻 I currently work on personal projects such as blogs and e-commerce platforms, always aiming to improve every day.',
             description4: "💡 I'm interested in everything related to web design, user experience, and continuously learning new tools.",
-            description5: "🚀 I'm looking for my first professional opportunity to keep growing and contribute my passion for technology.",
+            description5: "🚀 I'm looking to join a development team where I can continue growing professionally and contribute my passion for technology.",
         },
         skills: {
             title: '🧑‍💻 Skills & Technologies',
