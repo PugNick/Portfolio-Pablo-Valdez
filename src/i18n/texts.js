@@ -14,7 +14,7 @@ export const texts = {
         },
         info: {
             title: 'Sobre mí',
-            description1: '👋 Soy Pablo, desarrollador frontend autodidacta de Argentina. ¡Mucho gusto!',
+            description1: '👋 Soy Pablo, desarrollador frontend freelance de Argentina. ¡Mucho gusto!',
             description2: '🎓 Construí mis conocimientos a través de proyectos personales, documentación técnica y cursos online, con un enfoque en el aprendizaje continuo.',
             description3: '👨‍💻 Actualmente trabajo en proyectos personales como blogs y e-commerce, siempre buscando mejorar día a día.',
             description4: '💡 Me interesa todo lo relacionado con el diseño web, la experiencia de usuario y seguir aprendiendo nuevas herramientas.',
@@ -62,7 +62,7 @@ Podés contactarme por:`,
         },
         info: {
             title: 'About me',
-            description1: "👋 Hi! I'm Pablo, a self-taught frontend developer from Argentina. Nice to meet you!",
+            description1: "👋 Hi! I'm Pablo, a freelance frontend developer from Argentina. Nice to meet you!",
             description2: '🎓 I built my skills through personal projects, technical documentation, and online courses, with a strong focus on continuous learning.',
             description3: '👨‍💻 I currently work on personal projects such as blogs and e-commerce platforms, always aiming to improve every day.',
             description4: "💡 I'm interested in everything related to web design, user experience, and continuously learning new tools.",
